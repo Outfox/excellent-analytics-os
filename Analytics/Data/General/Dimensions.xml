@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Dimensions>
   <Category name="Visitor"
             type="D1">
@@ -15,23 +15,32 @@
             type="D2">
     <Dimension value="ga:visitLength"
                name="visit length" />
-  </Category>
-  <Category name="Traffic Sources">
+  </Category>		   
+<Category name="Traffic Sources"
+            type="D3">
     <Dimension value="ga:referralPath"
                name="referral path" />
+    <Dimension value="ga:fullReferrer"
+               name="full referrer" />
     <Dimension value="ga:campaign"
                name="campaign" />
     <Dimension value="ga:source"
                name="source" />
     <Dimension value="ga:medium"
                name="medium" />
+    <Dimension value="ga:sourceMedium"
+               name="source medium" />
     <Dimension value="ga:keyword"
                name="keyword" />
     <Dimension value="ga:adContent"
                name="ad content" />
+    <Dimension value="ga:socialNetwork"
+               name="social network" />
+    <Dimension value="ga:hasSocialSourceReferral"
+               name="social source referral" />
   </Category>
   <Category name="Campaign"
-            type="D3">
+            type="D4">
     <Dimension value="ga:referralPath"
                name="referral path" />
     <Dimension value="ga:campaign"
@@ -46,7 +55,7 @@
                name="ad content" />
   </Category>
   <Category name="AdWords"
-            type="D4">
+            type="D5">
     <Dimension value="ga:adGroup"
                name="ad group" />
     <Dimension value="ga:adSlot"
@@ -57,6 +66,8 @@
                name="ad distribution network" />
     <Dimension value="ga:adMatchType"
                name="ad match type" />
+    <Dimension value="ga:adKeywordMatchType"
+               name="ad keyword match type" />
     <Dimension value="ga:adMatchedQuery"
                name="ad matched query" />
     <Dimension value="ga:adPlacementDomain"
@@ -84,8 +95,19 @@
     <Dimension value="ga:adwordsCriteriaId"
                name="adwords criteria id" />
   </Category>
-  <Category name="System"
-            type="D5">
+  <Category name="Goal Conversions"
+            type="D6">
+    <Dimension value="ga:goalCompletionLocation"
+               name="goal completion location" />
+    <Dimension value="ga:goalPreviousStep1"
+               name="ga:goal previous step1" />
+    <Dimension value="ga:goalPreviousStep2"
+               name="ga:goal previous step2" />
+    <Dimension value="ga:goalPreviousStep3"
+               name="ga:goal previous step3" />
+  </Category>
+  <Category name="Platform or Device"
+            type="D7">
     <Dimension value="ga:browser"
                name="browser" />
     <Dimension value="ga:browserVersion"
@@ -94,6 +116,27 @@
                name="operating system" />
     <Dimension value="ga:operatingSystemVersion"
                name="operating system version" />
+    <Dimension value="ga:isMobile"
+               name="is mobile" />
+    <Dimension value="ga:isTablet"
+               name="is tablet" />
+    <Dimension value="ga:mobileDeviceBranding"
+               name="ga:mobile device branding" />
+    <Dimension value="ga:mobileDeviceModel"
+               name="ga:mobile device model" />
+    <Dimension value="ga:mobileInputSelector"
+               name="ga:mobile input selector" />
+    <Dimension value="ga:mobileDeviceInfo"
+               name="ga:mobile device info" />
+    <Dimension value="ga:mobileDeviceMarketingName"
+               name="ga:mobile device marketing name" />
+    <Dimension value="ga:deviceCategory"
+               name="ga:device category" />
+    <Dimension value="ga:dataSource"
+               name="ga:data source" />
+  </Category>
+  <Category name="System"
+            type="D8">
     <Dimension value="ga:flashVersion"
                name="flash version" />
     <Dimension value="ga:javaEnabled"
@@ -108,7 +151,7 @@
                name="screen resolution" />
   </Category>
   <Category name="Geo / Network"
-            type="D6">
+            type="D9">
     <Dimension value="ga:continent"
                name="continent" />
     <Dimension value="ga:subContinent"
@@ -117,6 +160,8 @@
                name="country" />
     <Dimension value="ga:region"
                name="region" />
+    <Dimension value="ga:metro"
+               name="designated market area" />
     <Dimension value="ga:city"
                name="city" />
     <Dimension value="ga:latitude"
@@ -129,11 +174,19 @@
                name="network location" />
   </Category>
   <Category name="Page Tracking"
-            type="D7">
+            type="D10">
     <Dimension value="ga:hostname"
                name="hostname" />
     <Dimension value="ga:pagePath"
                name="page path" />
+    <Dimension value="ga:pagePathLevel1"
+               name="page path level 1" />
+    <Dimension value="ga:pagePathLevel2"
+               name="page path level 2" />
+    <Dimension value="ga:pagePathLevel3"
+               name="page path level 3" />
+    <Dimension value="ga:pagePathLevel4"
+               name="page path level 4" />
     <Dimension value="ga:pageTitle"
                name="page title" />
     <Dimension value="ga:landingPagePath"
@@ -150,7 +203,7 @@
                name="page depth" />
   </Category>
   <Category name="Internal Search"
-            type="D8">
+            type="D11">
     <Dimension value="ga:searchUsed"
                name="search used" />
     <Dimension value="ga:searchKeyword"
@@ -164,8 +217,27 @@
     <Dimension value="ga:searchDestinationPage"
                name="search destination page" />
   </Category>
+  <Category name="App Tracking"
+            type="D12">
+    <Dimension value="ga:appInstallerId"
+               name="app installer id" />
+    <Dimension value="ga:appVersion"
+               name="app version" />
+    <Dimension value="ga:appName"
+               name="app name" />
+    <Dimension value="ga:appId"
+               name="app id" />
+    <Dimension value="ga:appScreenName"
+               name="app screen name" />
+    <Dimension value="ga:appScreenDepth"
+               name="app screen depth" />
+    <Dimension value="ga:landingScreenName"
+               name="landing screen name" />
+    <Dimension value="ga:exitScreenName"
+               name="exit screen name" />
+  </Category>
   <Category name="Event Tracking"
-            type="D9">
+            type="D13">
     <Dimension value="ga:eventCategory"
                name="event category" />
     <Dimension value="ga:eventAction"
@@ -174,7 +246,7 @@
                name="event label" />
   </Category>
   <Category name="Ecommerce"
-            type="D10">
+            type="D14">
     <Dimension value="ga:transactionId"
                name="transaction id" />
     <Dimension value="ga:affiliation"
@@ -189,9 +261,45 @@
                name="product name" />
     <Dimension value="ga:productSku"
                name="product sku" />
+    <Dimension value="ga:currencyCode"
+               name="currency code" />
+  </Category>
+  <Category name="Social Interactions"
+            type="D15">
+    <Dimension value="ga:socialInteractionNetwork"
+               name="social interaction network" />
+    <Dimension value="ga:socialInteractionAction"
+               name="social interaction action" />
+    <Dimension value="ga:socialInteractionNetworkAction"
+               name="social interaction network action" />
+    <Dimension value="ga:socialInteractionTarget"
+               name="social interaction target" />
+    <Dimension value="ga:socialInteractionType"
+               name="social interaction type" />
+  </Category>
+  <Category name="User Timings"
+            type="D16">
+    <Dimension value="ga:userTimingCategory"
+               name="user timing category" />
+    <Dimension value="ga:userTimingLabel"
+               name="user timing label" />
+    <Dimension value="ga:userTimingVariable"
+               name="user timing variable" />
+  </Category>
+  <Category name="Exceptions"
+            type="D17">
+    <Dimension value="ga:exceptionDescription"
+               name="exception description" />
+  </Category>
+  <Category name="Content Experiments"
+            type="D18">
+    <Dimension value="ga:experimentId"
+               name="experiment id" />
+    <Dimension value="ga:experimentVariant"
+               name="experiment variant" />
   </Category>
   <Category name="Custom Variables"
-            type="D11">
+            type="D19">
     <Dimension value="ga:customVarName1"
                name="custom var name 1" />
     <Dimension value="ga:customVarName2"
@@ -212,9 +320,19 @@
                name="custom var value 4" />
     <Dimension value="ga:customVarValue5"
                name="custom var value 5" />
+    <Dimension value="ga:dimension1"
+               name="dimension 1" />
+    <Dimension value="ga:dimension2"
+               name="dimension 2" />
+    <Dimension value="ga:dimension3"
+               name="dimension 3" />
+    <Dimension value="ga:dimension4"
+               name="dimension 4" />
+    <Dimension value="ga:dimension5"
+               name="dimension 5" />
   </Category>
-  <Category name="Time"
-            type="D12">
+ <Category name="Time"
+            type="D20">
     <Dimension value="ga:date"
                name="date" />
     <Dimension value="ga:year"
@@ -227,13 +345,74 @@
                name="day" />
     <Dimension value="ga:hour"
                name="hour" />
+    <Dimension value="ga:minute"
+               name="minute" />
     <Dimension value="ga:nthMonth"
                name="nth month" />
     <Dimension value="ga:nthWeek"
                name="nth week" />
     <Dimension value="ga:nthDay"
                name="nth day" />
+	<Dimension value="ga:nthMinute"
+               name="nth minute" />
     <Dimension value="ga:dayOfWeek"
                name="day of week" />
+    <Dimension value="ga:dayOfWeekName"
+               name="day of week name" />
+    <Dimension value="ga:dateHour"
+               name="date hour" />
+    <Dimension value="ga:yearMonth"
+               name="year month" />
+    <Dimension value="ga:yearWeek"
+               name="year week" />
+    <Dimension value="ga:isoWeek"
+               name="iso week" />
+    <Dimension value="ga:isoYear"
+               name="iso year" />
+    <Dimension value="ga:isoYearIsoWeek"
+               name="iso year iso week" />
+  </Category>
+  <Category name="Social Activities"
+            type="D21">
+    <Dimension value="ga:socialActivityEndorsingUrl"
+               name="social activity endorsing url" />
+    <Dimension value="ga:socialActivityDisplayName"
+               name="social activity display name" />
+    <Dimension value="ga:socialActivityPost"
+               name="social activity post" />   
+    <Dimension value="ga:socialActivityTimestamp"
+               name="social activity timestamp" />
+    <Dimension value="ga:socialActivityUserHandle"
+               name="social activity user handle" />
+    <Dimension value="ga:socialActivityUserPhotoUrl"
+               name="social activity user photo url" /> 
+    <Dimension value="ga:socialActivityUserProfileUrl"
+               name="social activity user profile url" />
+    <Dimension value="ga:socialActivityContentUrl"
+               name="social activity content url" />
+    <Dimension value="ga:socialActivityTagsSummary"
+               name="social activity tags summary" />
+    <Dimension value="ga:socialActivityAction"
+               name="social activity action" />
+    <Dimension value="ga:socialActivityNetworkAction"
+               name="social activity network action" />
+  </Category>
+   <Category name="Audience"
+            type="D22">
+    <Dimension value="ga:visitorAgeBracket"
+               name="visitor age bracket" />
+    <Dimension value="ga:visitorGender"
+               name="visitor gender" />
+    <Dimension value="ga:interestOtherCategory"
+               name="interest other category" />
+    <Dimension value="ga:interestAffinityCategory"
+               name="interest affinity category" />
+    <Dimension value="ga:interestMarketCategory"
+               name="interest market category" />
+  </Category>
+  <Category name="Channel Grouping"
+            type="D23"> 
+    <Dimension value="ga:channelGrouping"
+               name="default channel grouping" />
   </Category>
 </Dimensions>
